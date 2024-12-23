@@ -1,0 +1,40 @@
+{
+  "name": "mern-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npm run build && node dist/server.js --ignore client",
+    "dev": "npx nodemon",
+    "test": "jest --detectOpenHandles",
+    "seed": "node dist/seeds/seed.js"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ext": "ts,json,js",
+    "exec": "npx tsc && node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.7",
+    "babel-jest": "^29.7.0",
+    "dotenv": "^16.4.5",
+    "jest": "^29.0.0",
+    "supertest": "^6.3.3",
+    "typescript": "^5.5.3"
+  }
+}
