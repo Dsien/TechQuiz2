@@ -17,4 +17,7 @@ Random quiz questions from a MongoDB database.
 
 ## Video Link
 
-<video controls src="20241223-2120-12.9990381.mp4" title="Title"></video>
+
+https://github.com/user-attachments/assets/10a1ed06-9a17-4db1-bbfe-63b4c57031d1
+
+
